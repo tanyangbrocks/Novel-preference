@@ -11,7 +11,7 @@
 | 項目 | 現況 | 計畫 |
 |---|---|---|
 | 語言 | Python（使用者定案；老師口頭說 R 與 Python 都可以） | pandas、matplotlib、jieba；圖由 `scripts/` 產生或在報告的程式區塊內畫 |
-| Quarto | Jupyter 已於 2026-11-25 裝好（jupyter 1.1.1、ipykernel 7.4.0，已註冊 python3 核心）；Quarto CLI 這台電腦沒找到（查過 PATH、`C:\Program Files\Quarto` 與 RStudio 資料夾） | **使用者手動安裝 Quarto CLI**（官方安裝程式）；裝好後我用 `quarto check` 驗證 |
+| Quarto | **已安裝 Quarto 1.11.9**（`C:\Program Files\Quarto`，使用者手動安裝）；Jupyter 已裝好（jupyter 1.1.1、ipykernel 7.4.0，python3 核心已註冊）。`quarto check` 的依賴全部通過（Pandoc 3.10.0、Dart Sass、Deno、Typst 0.15.1；系統有 Chrome）；TinyTeX 與 LaTeX 沒裝（用 Typst 出 PDF 不需要） | **已知問題與解法**：Quarto 在預設暫存路徑（使用者名稱含中文）會因 CP950 編碼出錯，`quarto check` 的基本渲染步驟與一般 `quarto render` 都會失敗；只要把 TEMP/TMP 指到純英文路徑（`C:\qtmp`）就正常。用 `powershell -ExecutionPolicy Bypass -File scriptsender_report.ps1` 渲染，不改系統設定。已驗證：專案資料夾在中文路徑下可渲染，Python 區塊與中文 matplotlib 圖表（Microsoft JhengHei）正常 |
 | 專案位置 | `report/`（目前只有 `.gitkeep`） | 放 `_quarto.yml`、`index.qmd`、各章 `.qmd`；輸出到 `report/_output/`（不進 git） |
 | 輸出格式 | 未定 | 先以 HTML 開發；交付格式依使用者決定（HTML、PDF 或 DOCX） |
 | 中文圖表 | 未測 | matplotlib 指定中文字型（例如 Microsoft JhengHei），驗證圖上中文不亂碼 |
