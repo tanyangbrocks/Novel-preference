@@ -53,6 +53,12 @@ def main():
     for c, name in PLATFORMS.items():
         if c in df:
             out.append(row(f"電子圖書讀者使用 {name}（E22）", df[c].fillna(0).sum(), ebook.sum(), "分母為 E22 有答者；選項沒有 KadoKado"))
+    # 網路小說的代理指標：任一選項屬於網路小說或小說平台（2025 年調查沒有單獨的網路小說題）
+    NOVEL = ["E22_C1_slice12", "E22_C1_slice16", "E22_C1_slice17", "E22_C1_slice39", "E22_C1_slice47",
+             "E22_C1_slice52", "E22_C1_slice53", "E22_C1_slice54", "E22_C1_slice55", "E22_C1_slice56"]
+    net = (df[[c for c in NOVEL if c in df]].fillna(0) == 1).any(axis=1)
+    out.append(row("使用任一小說相關平台（CxC、鏡文學、POPO、起點、番茄等 10 項；網路小說的代理）", net.sum(), n, "占全體；鏡文學與 CxC 也做出版與 IP，不全是網路小說"))
+    out.append(row("使用任一小說相關平台，占電子圖書讀者", net.sum(), ebook.sum(), "分母為 E22 有答者"))
     e12 = df["E12c"].dropna()
     out.append(row("圖書每月有付費（E12c ＞ 1，含紙本，含非文學）", (e12 > 1).sum(), len(e12), "分母為圖書讀者；不是只有小說"))
     e12d = df["E12ab_C2_slice"].dropna()
