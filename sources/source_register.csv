@@ -1,0 +1,4 @@
+名稱,提供者,網址,資料年度,發布或更新日,取得日,格式,研究對象,樣本數,題目或欄位,分母與權重,可用變項,授權與使用限制,本機檔案,狀態
+2025 年臺灣文化內容消費趨勢調查數據,文化內容策進院,https://research.taicca.tw/static/trend_consumer,2025,2026-10-05（頁面更新日）,2026-11-25,xlsx（Raw Data／Codebook／Cross Table）,15–69 歲臺灣民眾網路問卷,2000 列（Raw Data 列數；問卷樣本數文字尚待核對）,1324 欄；出版題為 E 開頭,Raw Data 未見權重欄（尚待確認 Cross Table 是否加權）,見 data_processed/A_candidate_variables.csv,網站免責聲明只說資料僅供參考，未見再利用授權條款，使用前再確認,data_raw/taicca/2025_消費趨勢調查/2025.trend_consumer.xlsx,已下載，已讀 Codebook
+2025 年文化內容消費趨勢調查報告,文化內容策進院,https://research.taicca.tw/pdf/6cb49a4c-22dc-3f6d-bb2f-79f49d8010d5,2025,,,pdf,同上,,,,,同上,（待使用者手動下載）,未取得
+跨域文化內容閱聽調查報告（上）,文化內容策進院,https://research.taicca.tw/pdf/735225b4-ec9d-34aa-a764-295719dea446,（年度待核對）,2023/01/10（頁面更新日）,,pdf,15–49 歲近一年有兩項以上閱聽行為者,2000,出版的文學類題材偏好、作品改編偏好,只有報告,,同上,（待使用者手動下載）,未取得

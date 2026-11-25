@@ -1,3 +1,9 @@
 ~$*
 *.tmp
 .DS_Store
+# 第三方原始資料與由它產生的檔案不進版本控制；來源、大小、雜湊記在 data_raw/manifest.csv 與 sources/source_register.csv
+data_raw/*
+!data_raw/README.md
+!data_raw/manifest.csv
+data_processed/*
+!data_processed/README.md
