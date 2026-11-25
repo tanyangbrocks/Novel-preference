@@ -1,0 +1,38 @@
+project:
+  type: book
+  output-dir: _output
+
+book:
+  title: "小說偏好分析與原創小說平台決策"
+  author: "（待填）"
+  date: "2026-11-25"
+  chapters:
+    - index.qmd
+    - 01-motivation.qmd
+    - 02-data-methods.qmd
+    - 03-readers.qmd
+    - 04-creators.qmd
+    - 05-platforms.qmd
+    - 06-business.qmd
+    - 07-discussion.qmd
+    - 08-integration.qmd
+    - 09-recommendation.qmd
+    - 10-limits.qmd
+  appendices:
+    - appendix.qmd
+
+lang: zh-Hant
+number-sections: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+  typst:
+    mainfont: "Microsoft JhengHei"
+  docx: default
+
+jupyter: python3
+execute:
+  echo: false
+  warning: false
