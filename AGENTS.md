@@ -17,7 +17,7 @@
 10. **進度與待辦以 `實作進度.md` 為準**（比照使用者 `C:\Portfolio` 專案）。每次完成一項工作後立刻更新：「目前狀態」摘要、「最新完成」表格新增一列（功能／關鍵檔案／摘要，新的在最上面，且它必須是檔案裡第一個表格）、「待辦」勾選或移除已完成項目、標頭「最後更新」日期；在對應的 `docs/plan-*.md` 加上完成標記。不要再把新紀錄追加到 `HANDOFF.md` 的交接紀錄表。
 11. **「列出計畫」或「先列計畫」＝建立或更新 `docs/plan-*.md`**，不是只在對話中回覆。目前有 `docs/plan-research-flow.md`（研究流程與停止規則）與 `docs/plan-quarto-report.md`（報告大綱）。
 12. **防失焦**：每次蒐集前，先在 `sources/collection_log.csv` 寫這次要回答哪個子問題；範圍外的線索記進 `sources/leads.md`，不當場追；各面向的停止規則見 `docs/plan-research-flow.md`。
-13. **歷史歸檔**：「最新完成」超過 5 筆時執行 `powershell -ExecutionPolicy Bypass -File docsrchive-done.ps1`，把舊紀錄移到 `docs/history/completed.md`（保留最新 5 筆）。
+13. **歷史歸檔**：「最新完成」超過 5 筆時執行 `powershell -ExecutionPolicy Bypass -File docs\archive-done.ps1`，把舊紀錄移到 `docs/history/completed.md`（保留最新 5 筆）。
 14. **提交與推送**：改完專案檔案後自動 commit 並推送到 `origin main`；功能完成與 `實作進度.md` 更新放在同一個 commit，不要把進度更新單獨拆成 commit。
 15. 使用者問「想想」「你覺得」時只回答建議，說「改」才動手；不模仿老師的口吻寫報告。
 
