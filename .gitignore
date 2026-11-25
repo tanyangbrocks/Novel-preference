@@ -7,3 +7,8 @@ data_raw/*
 !data_raw/manifest.csv
 data_processed/*
 !data_processed/README.md
+
+# 安裝程式與大型檔案不進版本控制
+*.msi
+*.exe
+*.zip.tmp

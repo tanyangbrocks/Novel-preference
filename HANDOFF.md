@@ -67,7 +67,7 @@ C:\轉移資料\Data\2024年9月19日網卡又壞傳輸\彈羊\當前有期限�
 
 **不要做：** 不要模仿老師的口吻或講義用語寫報告與簡報，文字用使用者自己的話。老師口頭說 R 與 Python 都可以（使用者確認）。課程大綱列「個人 Quarto 專案報告」佔 50%，未找到 Quarto 範例或評分標準，只有第 5 至 7 週文字分析、第 9 週異質性與內生性。
 
-**環境（2026-11-25 查）：** R 4.6.1 在 `C:\Program Files\R\R-4.6.1`（不在 PATH），使用者套件庫有 ggplot2、jiebaR、knitr、rmarkdown、stringr，沒看到 tidytext、tidyverse、tmcn；Python 有 jieba 0.39.1、pandas、matplotlib、numpy；找不到 Quarto。以上皆未實測。**語言已定案：Python（使用者 2026-11-25）**，規劃書第 11 章與大綱已改寫；課程的 R 範例只當方法參考。Quarto 需搭配 Jupyter，是否安裝未確認。
+**環境（2026-11-25 查）：** R 4.6.1 在 `C:\Program Files\R\R-4.6.1`（不在 PATH），使用者套件庫有 ggplot2、jiebaR、knitr、rmarkdown、stringr，沒看到 tidytext、tidyverse、tmcn；Python 有 jieba 0.39.1、pandas、matplotlib、numpy；找不到 Quarto。以上皆未實測。**語言已定案：Python（使用者 2026-11-25）**，規劃書第 11 章與大綱已改寫；課程的 R 範例只當方法參考。Jupyter 已於 2026-11-25 經使用者同意安裝（jupyter 1.1.1、ipykernel 7.4.0）；Quarto CLI 由使用者手動安裝，尚未裝。
 
 ### 可行性查核進度（面向 A，2026-11-25）
 

@@ -11,7 +11,7 @@
 | 項目 | 現況 | 計畫 |
 |---|---|---|
 | 語言 | Python（使用者定案；老師口頭說 R 與 Python 都可以） | pandas、matplotlib、jieba；圖由 `scripts/` 產生或在報告的程式區塊內畫 |
-| Quarto | 這台電腦沒找到 Quarto CLI（我查過 PATH、`C:\Program Files\Quarto` 與 RStudio 資料夾），也沒裝 Jupyter | **需要使用者同意安裝**：Quarto CLI（官方安裝程式）與 `jupyter`（pip）。裝好後用 `quarto check` 驗證 |
+| Quarto | Jupyter 已於 2026-11-25 裝好（jupyter 1.1.1、ipykernel 7.4.0，已註冊 python3 核心）；Quarto CLI 這台電腦沒找到（查過 PATH、`C:\Program Files\Quarto` 與 RStudio 資料夾） | **使用者手動安裝 Quarto CLI**（官方安裝程式）；裝好後我用 `quarto check` 驗證 |
 | 專案位置 | `report/`（目前只有 `.gitkeep`） | 放 `_quarto.yml`、`index.qmd`、各章 `.qmd`；輸出到 `report/_output/`（不進 git） |
 | 輸出格式 | 未定 | 先以 HTML 開發；交付格式依使用者決定（HTML、PDF 或 DOCX） |
 | 中文圖表 | 未測 | matplotlib 指定中文字型（例如 Microsoft JhengHei），驗證圖上中文不亂碼 |
